@@ -1,0 +1,11 @@
+#/bin/bash
+
+#PBS -N mnist2_6_Kan_xgb
+#PBS -l select=1:ncpus=16:mem=20gb:ngpus=1:gpu_model=k40
+#PBS -l walltime=72:00:00
+
+module purge
+module load anaconda3/5.0.1 gurobi/7.0.2 
+source activate robusttrees_py37
+cd ~/8100/8100-Intro-to-AI-project/report3_codes/Kattack_codes
+python xgbKantchelianAttack.py -dn=mnist2_6 -mn=xgb -d../../data/binary_mnist0.t -m=../../report3_models/xgb/binary_mnist_unrobust/1000.model -c=2

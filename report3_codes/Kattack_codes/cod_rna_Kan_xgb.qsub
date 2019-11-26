@@ -1,0 +1,11 @@
+#/bin/bash
+
+#PBS -N cod_rna_Kan_xgb
+#PBS -l select=1:ncpus=16:mem=20gb:ngpus=1:gpu_model=k40
+#PBS -l walltime=72:00:00
+
+module purge
+module load anaconda3/5.0.1 gurobi/7.0.2 
+source activate robusttrees_py37
+cd ~/8100/8100-Intro-to-AI-project/report3_codes/Kattack_codes
+python xgbKantchelianAttack.py -dn=cod_rna -mn=xgb -d=../../data/cod-rna_s.t -m=../../report3_models/xgb/cod-rna_unrobust/0080.model -c=2

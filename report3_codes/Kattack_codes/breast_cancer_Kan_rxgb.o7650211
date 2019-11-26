@@ -1,0 +1,9095 @@
+{'data_name': 'breast_cancer', 'model_name': 'rxgb', 'data': '../../data/breast_cancer_scale0.test', 'model': '../../report3_models/rxgb/breast_cancer_robust/0004.model', 'num_classes': 2, 'offset': 0, 'num_attacks': 100, 'guard_val': 2e-07, 'round_digits': 20, 'feature_start': 1}
+binary classification:  True
+binary:  True
+USING MILP EXACT SOLVER!!
+order is: inf
+guard value is : 2e-07
+feature values are rounded to 20 digits
+temp file: temporary2948.json
+number of trees: 4
+Changed value of parameter Threads to 8
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+leaf value list: [-0.370909095, 0, 0.100000001, 0.13333334, 0.179310352, 0.325683087, -0.30964911, 0.120974839, 0.0747407973, -0.0376306139, 0.263743728, -0.0339366309, 0.261722445, 0.297614068, -0.27239123, 0.0332569778, 0.192677006, -0.0321013667, 0.228770956, -0.0283365883, 0.233072668, 0.258252382, -0.244927391, 0.0296026375, 0.168924809, -0.0273989141, 0.202567205, 0.0846895501, 0.230003148]
+number of leaves in the first k trees: [0, 6, 14, 22, 29]
+attr 9 min difference between thresholds:0.111110985
+attr 5 min difference between thresholds:0.055555491999999984
+sample length:  137
+
+
+
+
+======== Point 106 (1/100) starts =========
+
+
+==================================
+X: [0.        0.0961055 0.4444445 0.6666665 0.3333335 0.        0.5555555
+ 0.        0.6666665 1.        0.222222 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.5000002
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000002000000e-01, best bound 5.000002000000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.5
+Obj: 0.5
+
+-------------------------------------
+
+result for this point: [0.         0.0961055  0.4444445  0.61111085 0.3333335  0.44444471
+ 0.4999998  0.         0.6666665  0.4999998  0.222222  ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 106 (1/100) finished, distortion:0.5000002 =========
+
+
+
+
+======== Point 4 (2/100) starts =========
+
+
+==================================
+X: [0.        0.0946935 0.4444445 0.6666665 1.        1.        0.4444445
+ 1.        1.        1.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0946935  0.4444445  0.61111085 0.38888881 1.
+ 0.4444445  0.38888881 1.         0.4999998  0.        ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 4 (2/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 22 (3/100) starts =========
+
+
+==================================
+X: [0.        0.0785895 0.222222  0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 34 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0785895  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 22 (3/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 30 (4/100) starts =========
+
+
+==================================
+X: [0.        0.0920135 0.111111  0.4444445 0.6666665 0.5555555 0.3333335
+ 1.        0.6666665 0.5555555 0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0920135  0.38888922 0.4444445  0.38888881 0.5555555
+ 0.3333335  0.38888881 0.6666665  0.4999998  0.        ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 30 (4/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 80 (5/100) starts =========
+
+
+==================================
+X: [0.       0.091616 0.222222 0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 34 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.091616   0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 80 (5/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 33 (6/100) starts =========
+
+
+==================================
+X: [0.        0.0935055 0.3333335 0.777778  0.5555555 0.222222  0.3333335
+ 1.        0.6666665 0.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0935055  0.38888922 0.61111085 0.38888881 0.44444471
+ 0.3333335  0.38888881 0.6666665  0.38888922 0.        ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 33 (6/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 29 (7/100) starts =========
+
+
+==================================
+X: [0.        0.091919  0.3333335 1.        0.777778  0.4444445 0.3333335
+ 0.        1.        0.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 29 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 24 columns, 109 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+
+Root relaxation: objective 0.000000e+00, 18 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    1    0.38889    0.00000   100%     -    0s
+H    0     0                       0.3888892    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (18 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 3: 0 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] -0
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 0
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0
+Obj: 0
+
+-------------------------------------
+
+result for this point: [0.        0.091919  0.3333335 1.        0.777778  0.4444445 0.3333335
+ 0.        1.        0.        0.       ]
+success from solver: False
+mislabel constraint: -0.6936343910000001
+-------------------------------------
+start checking
+manually run trees
+leaf values:[0.13333334, -0.30964911, -0.27239123, -0.244927391], 
+sum:-0.693634391
+manual prediction result: -0.693634391
+** manual prediction shows attack succeeded!! **
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 29 (7/100) finished, distortion:0.0 =========
+
+
+
+
+======== Point 58 (8/100) starts =========
+
+
+==================================
+X: [0.        0.0762035 0.222222  0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 34 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0762035  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 58 (8/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 130 (9/100) starts =========
+
+
+==================================
+X: [0.        0.0485895 0.222222  0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 0
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0485895  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 130 (9/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 127 (10/100) starts =========
+true label:[0], predicted label:[1]
+prediction not correct, skip this one.
+
+
+
+
+======== Point 90 (11/100) starts =========
+
+
+==================================
+X: [0.        0.0941825 0.4444445 0.        0.        0.        0.111111
+ 0.        0.111111  0.111111  0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 14 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 51 rows, 32 columns, 159 nonzeros
+Variable types: 24 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.788964e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.29914    0    2    0.38889    0.29914  23.1%     -    0s
+H    0     0                       0.3888890    0.29914  23.1%     -    0s
+
+Cutting planes:
+  Implied bound: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0941825  0.4444445  0.         0.         0.
+ 0.5000002  0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 90 (11/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 76 (12/100) starts =========
+
+
+==================================
+X: [0.        0.090689  0.3333335 0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.090689   0.38888922 0.         0.         0.
+ 0.5000002  0.         0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 76 (12/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 0 (13/100) starts =========
+
+
+==================================
+X: [0.        0.093986  0.4444445 0.        0.        0.        0.111111
+ 0.        0.222222  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.093986   0.4444445  0.         0.         0.
+ 0.5000002  0.         0.222222   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 0 (13/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 17 (14/100) starts =========
+
+
+==================================
+X: [0.        0.0471845 0.        0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0471845  0.38888922 0.         0.         0.
+ 0.5000002  0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 17 (14/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 50 (15/100) starts =========
+
+
+==================================
+X: [0.        0.0552725 0.4444445 1.        1.        1.        0.4444445
+ 0.111111  0.777778  0.4444445 0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 28 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 37 rows, 24 columns, 111 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+Found heuristic solution: objective 0.5555557
+
+Root relaxation: objective 9.427329e-02, 21 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         0.55556    0.55556  0.00%     -    0s
+
+Explored 0 nodes (21 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.555556 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.555556930000e-01, best bound 5.555556930000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] -0
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.555556
+Obj: 0.555556
+
+-------------------------------------
+
+result for this point: [0.         0.0552725  0.4444445  1.         1.         0.44444431
+ 0.4444445  0.111111   0.777778   0.38888881 0.        ]
+success from solver: True
+mislabel constraint: -0.6936343910000001
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 50 (15/100) finished, distortion:0.5555556930000001 =========
+
+
+
+
+======== Point 126 (16/100) starts =========
+
+
+==================================
+X: [0.        0.0403085 0.3333335 0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 33 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    5    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (39 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0403085  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 126 (16/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 3 (17/100) starts =========
+
+
+==================================
+X: [0.        0.094693  0.3333335 0.        0.        0.        0.111111
+ 0.        0.222222  0.111111  0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 14 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 51 rows, 32 columns, 159 nonzeros
+Variable types: 24 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.788964e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.29914    0    2    0.38889    0.29914  23.1%     -    0s
+H    0     0                       0.3888890    0.29914  23.1%     -    0s
+
+Cutting planes:
+  Implied bound: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.094693   0.3333335  0.         0.         0.
+ 0.5000002  0.         0.222222   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 3 (17/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 12 (18/100) starts =========
+
+
+==================================
+X: [0.        0.0194915 0.        0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0194915  0.         0.         0.         0.
+ 0.5000002  0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 12 (18/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 113 (19/100) starts =========
+
+
+==================================
+X: [0.        0.097207  0.3333335 0.        0.3333335 0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.530376e-02, 21 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (21 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.097207   0.3333335  0.         0.3333335  0.
+ 0.5000002  0.         0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 113 (19/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 112 (20/100) starts =========
+
+
+==================================
+X: [0.        0.0964745 0.        0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0964745  0.         0.         0.         0.
+ 0.5000002  0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 112 (20/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 125 (21/100) starts =========
+
+
+==================================
+X: [0.        0.0375605 0.222222  0.        0.        0.        0.111111
+ 0.        0.111111  0.222222  0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 14 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 51 rows, 32 columns, 159 nonzeros
+Variable types: 24 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.172679e-02, 31 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.2777780    0.27778  0.00%     -    0s
+
+Explored 0 nodes (37 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.277778 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.777780000000e-01, best bound 2.777780000000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 0
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 1
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.277778
+Obj: 0.277778
+
+-------------------------------------
+
+result for this point: [0.        0.0375605 0.222222  0.        0.        0.        0.111111
+ 0.        0.111111  0.5000002 0.       ]
+success from solver: True
+mislabel constraint: 0.08217945730000001
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 125 (21/100) finished, distortion:0.27777820000000003 =========
+
+
+
+
+======== Point 89 (22/100) starts =========
+
+
+==================================
+X: [0.       0.094101 0.       0.111111 0.       0.222222 0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+
+Root relaxation: objective 5.932426e-02, 45 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.06683    0    8    0.50000    0.06683  86.6%     -    0s
+H    0     0                       0.3888890    0.06683  82.8%     -    0s
+H    0     0                       0.3888890    0.06683  82.8%     -    0s
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 1 nodes (55 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 3: 0.388889 0.388889 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] 1
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.094101   0.         0.111111   0.         0.44444471
+ 0.5000002  0.         0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 0.582576655
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 89 (22/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 43 (23/100) starts =========
+
+
+==================================
+X: [0.        0.0093315 0.4444445 0.222222  0.111111  0.777778  0.4444445
+ 1.        0.777778  0.        0.111111 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0093315  0.4444445  0.222222   0.111111   0.777778
+ 0.4444445  0.38888881 0.777778   0.38888922 0.111111  ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 43 (23/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 77 (24/100) starts =========
+
+
+==================================
+X: [0.        0.090689  0.4444445 0.        0.        0.222222  0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 6.437568e-02, 36 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.06683    0    7    0.38889    0.06683  82.8%     -    0s
+H    0     0                       0.3888890    0.06683  82.8%     -    0s
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 1 nodes (43 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] -0
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.090689   0.4444445  0.         0.         0.44444471
+ 0.5000002  0.         0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.582576655
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 77 (24/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 78 (25/100) starts =========
+
+
+==================================
+X: [0.        0.0912815 0.3333335 0.        0.        0.222222  0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 6.683011e-02, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (28 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0912815  0.38888922 0.         0.         0.44444471
+ 0.5000002  0.         0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.582576655
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 78 (25/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 134 (26/100) starts =========
+
+
+==================================
+X: [0.        0.061642  0.4444445 1.        1.        0.222222  0.6666665
+ 0.222222  0.777778  1.        0.111111 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 32 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 33 rows, 24 columns, 103 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Root relaxation: objective 5.032597e-01, 31 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.61111    0.61111  0.00%     -    0s
+
+Explored 0 nodes (31 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.061642   0.4444445  0.61111085 0.38888881 0.44444471
+ 0.4999998  0.222222   0.777778   0.4999998  0.111111  ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 134 (26/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 122 (27/100) starts =========
+
+
+==================================
+X: [0.        0.0301345 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 36 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (38 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0301345  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 122 (27/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 1 (28/100) starts =========
+
+
+==================================
+X: [0.        0.0944635 0.        0.        0.        0.        0.111111
+ 0.        0.222222  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 0
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0944635  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.222222   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 1 (28/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 94 (29/100) starts =========
+
+
+==================================
+X: [0.        0.094615  0.4444445 0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 0
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.094615   0.4444445  0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 94 (29/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 124 (30/100) starts =========
+
+
+==================================
+X: [0.       0.035347 0.       0.       0.       0.       0.111111 0.
+ 0.       0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 0
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.035347   0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 124 (30/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 120 (31/100) starts =========
+
+
+==================================
+X: [0.        0.0977185 0.4444445 0.        0.        0.        0.111111
+ 0.        0.222222  0.111111  0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 14 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 51 rows, 32 columns, 159 nonzeros
+Variable types: 24 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.788964e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.29914    0    2    0.38889    0.29914  23.1%     -    0s
+H    0     0                       0.3888890    0.29914  23.1%     -    0s
+
+Cutting planes:
+  Implied bound: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0977185  0.4444445  0.         0.         0.
+ 0.5000002  0.         0.222222   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0028691063000000107
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 120 (31/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 62 (32/100) starts =========
+
+
+==================================
+X: [0.        0.082939  0.4444445 0.        0.        0.111111  0.
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 9 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 56 rows, 35 columns, 180 nonzeros
+Variable types: 26 continuous, 9 integer (9 binary)
+
+Root relaxation: objective 7.141245e-02, 35 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08384    0    6    0.50000    0.08384  83.2%     -    0s
+H    0     0                       0.3888890    0.08384  78.4%     -    0s
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 1 nodes (42 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 1
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 1
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 1
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.082939   0.4444445  0.         0.38888922 0.111111
+ 0.         0.         0.111111   0.         0.38888922]
+success from solver: True
+mislabel constraint: 0.27093375259999997
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 62 (32/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 69 (33/100) starts =========
+
+
+==================================
+X: [0.        0.087554  0.4444445 0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 1
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 1
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 1
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.087554   0.4444445  0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.         0.38888922]
+success from solver: True
+mislabel constraint: 0.27093375259999997
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 69 (33/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 40 (34/100) starts =========
+
+
+==================================
+X: [0.       0.095667 0.       0.       0.       0.       0.       0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 22 rows and 13 columns
+Presolve time: 0.00s
+Presolved: 43 rows, 27 columns, 128 nonzeros
+Variable types: 20 continuous, 7 integer (7 binary)
+
+Explored 1 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 1
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 1
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 1
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.095667   0.38888922 0.         0.38888922 0.
+ 0.         0.         0.111111   0.         0.38888922]
+success from solver: True
+mislabel constraint: 0.27093375259999997
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 40 (34/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 79 (35/100) starts =========
+
+
+==================================
+X: [0.       0.091497 0.222222 0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 1
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 1
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 1
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.091497   0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.         0.38888922]
+success from solver: True
+mislabel constraint: 0.27093375259999997
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 79 (35/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 44 (36/100) starts =========
+
+
+==================================
+X: [0.        0.021586  1.        0.4444445 1.        0.222222  0.4444445
+ 0.777778  0.6666665 0.777778  0.222222 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+Found heuristic solution: objective 0.3888892
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888891850000e-01, best bound 3.888891850000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.021586   1.         0.61111125 1.         0.38888922
+ 0.5000002  0.38888881 0.6666665  0.38888881 0.222222  ]
+success from solver: True
+mislabel constraint: -0.263010442
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 44 (36/100) finished, distortion:0.3888891850000001 =========
+
+
+
+
+======== Point 117 (37/100) starts =========
+
+
+==================================
+X: [0.        0.0974915 0.111111  0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 38 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 2
+
+Explored 1 nodes (45 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0974915  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 117 (37/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 129 (38/100) starts =========
+
+
+==================================
+X: [0.        0.047175  0.4444445 1.        1.        0.4444445 0.3333335
+ 0.4444445 0.3333335 0.3333335 0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 30 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 35 rows, 24 columns, 107 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+Found heuristic solution: objective 0.0555557
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.0555557 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.555568500000e-02, best bound 5.555568500000e-02, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] -0
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.0555557
+Obj: 0.0555557
+
+-------------------------------------
+
+result for this point: [0.         0.047175   0.4444445  1.         1.         0.4444445
+ 0.3333335  0.38888881 0.3333335  0.3333335  0.        ]
+success from solver: False
+mislabel constraint: -0.6936343910000001
+-------------------------------------
+start checking
+manually run trees
+leaf values:[0.13333334, -0.30964911, -0.27239123, -0.244927391], 
+sum:-0.693634391
+manual prediction result: -0.693634391
+** manual prediction shows attack succeeded!! **
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 129 (38/100) finished, distortion:0.05555568500000002 =========
+
+
+
+
+======== Point 25 (39/100) starts =========
+
+
+==================================
+X: [0.        0.0889525 0.777778  1.        1.        1.        0.5555555
+ 1.        1.        1.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-01, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 0
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0889525  0.777778   1.         1.         0.44444431
+ 0.4999998  0.38888881 1.         0.38888881 0.        ]
+success from solver: True
+mislabel constraint: -0.6936343910000001
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 25 (39/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 8 (40/100) starts =========
+
+
+==================================
+X: [0.        0.0955865 1.        1.        0.777778  1.        0.5555555
+ 0.4444445 1.        0.222222  0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+
+Loaded MIP start with objective 0.555556
+
+Presolve removed 29 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 36 rows, 24 columns, 109 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+
+Root relaxation: objective 1.053930e-01, 24 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.15009    0    3    0.55556    0.15009  73.0%     -    0s
+H    0     0                       0.3888892    0.15009  61.4%     -    0s
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+
+Explored 1 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.555556 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888891850000e-01, best bound 3.888891850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0955865  1.         1.         0.38888881 1.
+ 0.4999998  0.38888881 1.         0.222222   0.        ]
+success from solver: True
+mislabel constraint: -0.31895639000000003
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 8 (40/100) finished, distortion:0.3888891850000001 =========
+
+
+
+
+======== Point 87 (41/100) starts =========
+
+
+==================================
+X: [0.       0.093742 0.222222 0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 34 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.093742   0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 87 (41/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 75 (42/100) starts =========
+
+
+==================================
+X: [0.        0.090541  0.3333335 0.111111  0.3333335 0.222222  0.111111
+ 0.111111  0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 4.729862e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.06729    0    4    0.38889    0.06729  82.7%     -    0s
+H    0     0                       0.2222225    0.06729  69.7%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (30 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.222223 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222225070000e-01, best bound 2.222225070000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.222223
+Obj: 0.222223
+
+-------------------------------------
+
+result for this point: [0.         0.090541   0.38888922 0.111111   0.38888922 0.44444471
+ 0.111111   0.111111   0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 0.185286045
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 75 (42/100) finished, distortion:0.22222270700000002 =========
+
+
+
+
+======== Point 11 (43/100) starts =========
+
+
+==================================
+X: [0.       0.009003 0.222222 0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.444445
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.511780e-02, 35 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.44444    0.08575  80.7%     -    0s
+H    0     0                       0.3888890    0.08575  77.9%     -    0s
+
+Cutting planes:
+  MIR: 2
+
+Explored 1 nodes (36 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.444445 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.009003   0.38888922 0.         0.38888922 0.38888922
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 11 (43/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 35 (44/100) starts =========
+
+
+==================================
+X: [0.        0.0942375 0.3333335 0.        0.111111  0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.268221e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0942375  0.38888922 0.         0.38888922 0.38888922
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 35 (44/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 65 (45/100) starts =========
+true label:[0], predicted label:[1]
+prediction not correct, skip this one.
+
+
+
+
+======== Point 82 (46/100) starts =========
+
+
+==================================
+X: [0.        0.0923175 0.111111  0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 33 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (33 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0923175  0.38888922 0.         0.38888922 0.38888922
+ 0.111111   0.         0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 82 (46/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 5 (47/100) starts =========
+
+
+==================================
+X: [0.        0.0948195 0.222222  0.        0.111111  0.        0.111111
+ 0.        0.222222  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.268221e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0948195  0.38888922 0.         0.38888922 0.38888922
+ 0.111111   0.         0.222222   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 5 (47/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 88 (48/100) starts =========
+
+
+==================================
+X: [0.        0.093812  0.222222  0.        0.        0.111111  0.222222
+ 0.3333335 0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 2.972147e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.03555    0    5    0.38889    0.03555  90.9%     -    0s
+H    0     0                       0.0555555    0.03555  36.0%     -    0s
+     0     0     cutoff    0         0.05556    0.05556  0.00%     -    0s
+
+Explored 1 nodes (35 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.0555555 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.555551500000e-02, best bound 5.555551500000e-02, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.0555555
+Obj: 0.0555555
+
+-------------------------------------
+
+result for this point: [0.         0.093812   0.222222   0.         0.         0.111111
+ 0.222222   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 88 (48/100) finished, distortion:0.055555715000000006 =========
+
+
+
+
+======== Point 70 (49/100) starts =========
+
+
+==================================
+X: [0.        0.0877755 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0877755  0.         0.         0.         0.
+ 0.111111   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 70 (49/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 24 (50/100) starts =========
+
+
+==================================
+X: [0.        0.0878235 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0878235  0.         0.         0.         0.
+ 0.111111   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 24 (50/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 111 (51/100) starts =========
+
+
+==================================
+X: [0.        0.096443  0.4444445 0.222222  0.111111  0.        0.222222
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 10 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 55 rows, 34 columns, 173 nonzeros
+Variable types: 26 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 6.863787e-02, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (29 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.096443   0.38888881 0.222222   0.111111   0.
+ 0.222222   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 111 (51/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 23 (52/100) starts =========
+
+
+==================================
+X: [0.        0.086203  0.4444445 0.        0.        0.5555555 0.222222
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 3.200078e-02, 24 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.09828    0    1    0.38889    0.09828  74.7%     -    0s
+H    0     0                       0.2777780    0.09828  64.6%     -    0s
+     0     0 infeasible    0         0.27778    0.27778  0.00%     -    0s
+
+Explored 1 nodes (28 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.277778 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.777780000000e-01, best bound 2.777780000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.277778
+Obj: 0.277778
+
+-------------------------------------
+
+result for this point: [0.        0.086203  0.4444445 0.        0.        0.5555555 0.5000002
+ 0.        0.        0.        0.       ]
+success from solver: True
+mislabel constraint: 0.582576655
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 23 (52/100) finished, distortion:0.27777820000000003 =========
+
+
+
+
+======== Point 34 (53/100) starts =========
+
+
+==================================
+X: [0.        0.0938515 0.4444445 0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.444445
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.511780e-02, 30 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    5    0.44444    0.08575  80.7%     -    0s
+H    0     0                       0.3888890    0.08575  77.9%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (31 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.444445 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0938515  0.4444445  0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 34 (53/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 97 (54/100) starts =========
+
+
+==================================
+X: [0.        0.0949365 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0949365  0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 97 (54/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 41 (55/100) starts =========
+
+
+==================================
+X: [0.        0.096124  0.3333335 0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.096124   0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 41 (55/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 52 (56/100) starts =========
+
+
+==================================
+X: [0.        0.0711865 0.111111  0.222222  0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 10 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 55 rows, 34 columns, 173 nonzeros
+Variable types: 26 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 7.483835e-02, 34 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (34 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0711865  0.38888922 0.222222   0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 52 (56/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 55 (57/100) starts =========
+
+
+==================================
+X: [0.        0.0730995 0.222222  0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0730995  0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 55 (57/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 57 (58/100) starts =========
+
+
+==================================
+X: [0.        0.0754585 0.4444445 0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0754585  0.4444445  0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 57 (58/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 73 (59/100) starts =========
+
+
+==================================
+X: [0.        0.08941   0.222222  0.        0.3333335 0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.530376e-02, 23 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (23 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.08941    0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 73 (59/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 114 (60/100) starts =========
+
+
+==================================
+X: [0.       0.097226 0.       0.       0.111111 0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.268221e-02, 29 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (29 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.097226   0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 114 (60/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 95 (61/100) starts =========
+true label:[0], predicted label:[1]
+prediction not correct, skip this one.
+
+
+
+
+======== Point 16 (62/100) starts =========
+
+
+==================================
+X: [0.       0.047175 0.       0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.047175   0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 16 (62/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 67 (63/100) starts =========
+
+
+==================================
+X: [0.        0.0862975 0.3333335 0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0862975  0.38888922 0.         0.38888922 0.
+ 0.111111   0.         0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 67 (63/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 131 (64/100) starts =========
+
+
+==================================
+X: [0.        0.0522635 0.222222  0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.111111 ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.807469e-02, 33 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.18186    0    2    0.38889    0.18186  53.2%     -    0s
+H    0     0                       0.3888890    0.18186  53.2%     -    0s
+H    0     0                       0.2777780    0.18186  34.5%     -    0s
+     0     0     cutoff    0         0.27778    0.27778  0.00%     -    0s
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 3: 0.277778 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.777780150000e-01, best bound 2.777780150000e-01, gap 0.0000%
+p[0] -0
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 1
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 1
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 1
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 1
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.277778
+Obj: 0.277778
+
+-------------------------------------
+
+result for this point: [0.         0.0522635  0.222222   0.         0.         0.
+ 0.111111   0.         0.111111   0.         0.38888922]
+success from solver: True
+mislabel constraint: 0.1376004126
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 131 (64/100) finished, distortion:0.277778215 =========
+
+
+
+
+======== Point 132 (65/100) starts =========
+
+
+==================================
+X: [0.       0.05327  0.222222 0.       0.       0.       0.222222 0.111111
+ 0.       0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.082277e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.2777780    0.27778  0.00%     -    0s
+
+Explored 0 nodes (44 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.277778 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.777780150000e-01, best bound 2.777780150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.277778
+Obj: 0.277778
+
+-------------------------------------
+
+result for this point: [0.         0.05327    0.38888922 0.         0.         0.
+ 0.222222   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 132 (65/100) finished, distortion:0.277778215 =========
+
+
+
+
+======== Point 19 (66/100) starts =========
+
+
+==================================
+X: [0.        0.060352  0.4444445 0.        0.111111  0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.268221e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.060352   0.4444445  0.         0.111111   0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 19 (66/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 103 (67/100) starts =========
+
+
+==================================
+X: [0.        0.0959135 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0959135  0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 103 (67/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 100 (68/100) starts =========
+
+
+==================================
+X: [0.       1.       0.       0.       0.222222 0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.793385e-02, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (28 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         1.         0.38888922 0.         0.222222   0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 100 (68/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 136 (69/100) starts =========
+
+
+==================================
+X: [0.        0.062288  0.3333335 0.777778  0.777778  0.4444445 0.3333335
+ 0.4444445 1.        0.3333335 0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 30 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 35 rows, 24 columns, 107 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.3888892
+Found heuristic solution: objective 0.0555557
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.0555557 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.555568500000e-02, best bound 5.555568500000e-02, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] -0
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.0555557
+Obj: 0.0555557
+
+-------------------------------------
+
+result for this point: [0.         0.062288   0.38888922 0.777778   0.777778   0.4444445
+ 0.3333335  0.38888881 1.         0.3333335  0.        ]
+success from solver: False
+mislabel constraint: -0.6936343910000001
+-------------------------------------
+start checking
+manually run trees
+leaf values:[0.13333334, -0.30964911, -0.27239123, -0.244927391], 
+sum:-0.693634391
+manual prediction result: -0.693634391
+** manual prediction shows attack succeeded!! **
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 136 (69/100) finished, distortion:0.055555715000000006 =========
+
+
+
+
+======== Point 32 (70/100) starts =========
+
+
+==================================
+X: [0.        0.0932345 0.4444445 0.        0.111111  0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 6.985242e-02, 36 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08268    0    5    0.38889    0.08268  78.7%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (41 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0932345  0.4444445  0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 32 (70/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 6 (71/100) starts =========
+
+
+==================================
+X: [0.        0.094892  0.3333335 0.        0.        0.        0.111111
+ 0.222222  0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 5.788632e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.1666670    0.16667  0.00%     -    0s
+
+Explored 0 nodes (34 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.166667 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.666670150000e-01, best bound 1.666670150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.166667
+Obj: 0.166667
+
+-------------------------------------
+
+result for this point: [0.         0.094892   0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 6 (71/100) finished, distortion:0.16666721500000004 =========
+
+
+
+
+======== Point 46 (72/100) starts =========
+
+
+==================================
+X: [0.        0.0259935 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0259935  0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 46 (72/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 39 (73/100) starts =========
+
+
+==================================
+X: [0.        0.0950955 0.222222  0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0950955  0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 39 (73/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 54 (74/100) starts =========
+
+
+==================================
+X: [0.        0.0730095 0.3333335 0.        0.222222  0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.793385e-02, 24 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (24 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0730095  0.38888922 0.         0.222222   0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 54 (74/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 99 (75/100) starts =========
+
+
+==================================
+X: [0.        0.0953185 0.3333335 0.        0.        0.        0.111111
+ 0.        0.222222  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0953185  0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.222222   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 99 (75/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 101 (76/100) starts =========
+
+
+==================================
+X: [0.       0.095742 0.       0.       0.222222 0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 7.793385e-02, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (28 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.095742   0.38888922 0.         0.222222   0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 101 (76/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 37 (77/100) starts =========
+
+
+==================================
+X: [0.       0.094849 0.222222 0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.094849   0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 37 (77/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 123 (78/100) starts =========
+
+
+==================================
+X: [0.        0.0351865 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 32 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (32 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0351865  0.38888922 0.         0.         0.
+ 0.111111   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 123 (78/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 128 (79/100) starts =========
+
+
+==================================
+X: [0.       0.044147 0.       0.       0.       0.222222 0.111111 0.
+ 0.       0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 6.683011e-02, 33 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0    1    0.38889    0.22222  42.9%     -    0s
+H    0     0                       0.3888890    0.22222  42.9%     -    0s
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 1 nodes (39 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] 1
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.044147   0.         0.         0.         0.44444471
+ 0.5000002  0.         0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.582576655
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 128 (79/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 36 (80/100) starts =========
+
+
+==================================
+X: [0.        0.0948165 0.4444445 0.        0.222222  0.        0.111111
+ 0.        0.222222  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.444445
+
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 53 rows, 33 columns, 168 nonzeros
+Variable types: 25 continuous, 8 integer (8 binary)
+
+Root relaxation: objective 6.777059e-02, 28 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.07793    0    5    0.44444    0.07793  82.5%     -    0s
+H    0     0                       0.3888890    0.07793  80.0%     -    0s
+
+Cutting planes:
+  StrongCG: 1
+  Flow cover: 1
+
+Explored 1 nodes (30 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.444445 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0948165  0.4444445  0.         0.38888922 0.
+ 0.111111   0.         0.222222   0.38888922 0.38888922]
+success from solver: True
+mislabel constraint: 0.0362024453
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 36 (80/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 135 (81/100) starts =========
+
+
+==================================
+X: [0.        0.062288  0.3333335 0.777778  0.5555555 0.3333335 0.222222
+ 0.3333335 1.        0.5555555 0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 28 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 37 rows, 24 columns, 111 nonzeros
+Variable types: 18 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.1666672
+Found heuristic solution: objective 0.1666667
+
+Root relaxation: objective 8.821349e-02, 16 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.16667    0.16667  0.00%     -    0s
+
+Explored 0 nodes (16 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.166667 0.166667 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.666666850000e-01, best bound 1.666666850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] -0
+p[3] 1
+p[4] 1
+p[5] -0
+p[6] 1
+p[7] 1
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 1
+l[4] 0
+l[5] 0
+l[6] 1
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 1
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 1
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.166667
+Obj: 0.166667
+
+-------------------------------------
+
+result for this point: [0.         0.062288   0.38888922 0.777778   0.5555555  0.3333335
+ 0.222222   0.3333335  1.         0.38888881 0.        ]
+success from solver: True
+mislabel constraint: -0.6936343910000001
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 135 (81/100) finished, distortion:0.16666668499999998 =========
+
+
+
+
+======== Point 38 (82/100) starts =========
+
+
+==================================
+X: [0.        0.094936  0.4444445 0.111111  0.3333335 0.        0.
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 6.880335e-02, 30 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08559    0    3    0.38889    0.08559  78.0%     -    0s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (31 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.094936   0.4444445  0.111111   0.38888922 0.38888922
+ 0.         0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 38 (82/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 2 (83/100) starts =========
+
+
+==================================
+X: [0.       0.094495 0.222222 0.       0.       0.       0.111111 0.
+ 0.111111 0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 0
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.094495   0.38888922 0.         0.38888922 0.38888922
+ 0.111111   0.38888922 0.111111   0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 2 (83/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 96 (84/100) starts =========
+
+
+==================================
+X: [0.        0.094888  0.6666665 0.777778  0.777778  0.6666665 0.222222
+ 1.        0.6666665 0.111111  0.222222 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.094888   0.6666665  0.61111085 0.38888881 0.6666665
+ 0.222222   0.38888881 0.6666665  0.38888922 0.222222  ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 96 (84/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 7 (85/100) starts =========
+
+
+==================================
+X: [0.        0.095564  0.777778  0.3333335 0.3333335 0.        0.5555555
+ 1.        0.111111  0.4444445 0.111111 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.095564   0.777778   0.3333335  0.3333335  0.44444471
+ 0.4999998  0.38888881 0.111111   0.4444445  0.111111  ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 7 (85/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 64 (86/100) starts =========
+
+
+==================================
+X: [0.        0.084162  0.3333335 0.5555555 0.5555555 0.4444445 0.6666665
+ 0.5555555 0.6666665 0.6666665 0.222222 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+Loaded MIP start with objective 0.166667
+
+Presolve removed 65 rows and 40 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 24 available processors)
+
+Solution count 2: 0.166667 0.166667 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.666666850000e-01, best bound 1.666666850000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 1
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.166667
+Obj: 0.166667
+
+-------------------------------------
+
+result for this point: [0.         0.084162   0.38888922 0.5555555  0.38888881 0.4444445
+ 0.4999998  0.38888881 0.6666665  0.4999998  0.38888922]
+success from solver: True
+mislabel constraint: -0.0971308947
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 64 (86/100) finished, distortion:0.16666721500000004 =========
+
+
+
+
+======== Point 10 (87/100) starts =========
+
+
+==================================
+X: [0.        0.005941  0.6666665 0.5555555 1.        0.4444445 0.222222
+ 1.        0.888889  1.        0.111111 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 1
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.005941   0.6666665  0.5555555  0.38888881 0.4444445
+ 0.222222   0.38888881 0.888889   0.4999998  0.38888922]
+success from solver: True
+mislabel constraint: -0.0971308947
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 10 (87/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 47 (88/100) starts =========
+
+
+==================================
+X: [0.        0.036906  0.4444445 1.        1.        1.        1.
+ 1.        1.        0.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-01, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 0
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 1
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.036906   0.4444445  0.61111085 0.38888881 0.44444431
+ 0.4999998  0.38888881 1.         0.38888922 0.38888922]
+success from solver: True
+mislabel constraint: -0.0971308947
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 47 (88/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 28 (89/100) starts =========
+
+
+==================================
+X: [0.        0.090269  0.4444445 0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 33 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    5    0.38889    0.08575  77.9%     -    0s
+     0     0     cutoff    0         0.38889    0.38889  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Flow cover: 1
+
+Explored 1 nodes (39 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.090269   0.4444445  0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 28 (89/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 72 (90/100) starts =========
+
+
+==================================
+X: [0.       0.089164 0.222222 0.       0.       0.       0.111111 0.
+ 0.       0.       0.      ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 0
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.089164   0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 72 (90/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 21 (91/100) starts =========
+
+
+==================================
+X: [0.        0.077986  0.5555555 1.        0.4444445 0.4444445 0.3333335
+ 1.        0.5555555 1.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.077986   0.5555555  0.61111085 0.38888881 0.44444471
+ 0.3333335  0.38888881 0.5555555  0.4999998  0.        ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 21 (91/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 45 (92/100) starts =========
+
+
+==================================
+X: [0.        0.0216355 0.3333335 0.        0.        0.111111  0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 6.928460e-02, 38 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.07214    0    7    0.38889    0.07214  81.5%     -    0s
+H    0     0                       0.3888890    0.07214  81.5%     -    0s
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 1 nodes (45 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.388889 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890000000e-01, best bound 3.888890000000e-01, gap 0.0000%
+p[0] 1
+p[1] 0
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 1
+p[7] 0
+p[8] -0
+p[9] 0
+l[0] 0
+l[1] 0
+l[2] 1
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 1
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 1
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 1
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0216355  0.38888922 0.         0.         0.44444471
+ 0.5000002  0.         0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.582576655
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 45 (92/100) finished, distortion:0.3888892 =========
+
+
+
+
+======== Point 20 (93/100) starts =========
+
+
+==================================
+X: [0.        0.0608605 0.4444445 0.6666665 1.        0.5555555 0.4444445
+ 1.        0.6666665 0.4444445 0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0608605  0.4444445  0.61111085 0.38888881 0.5555555
+ 0.4444445  0.38888881 0.6666665  0.4444445  0.        ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 20 (93/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 31 (94/100) starts =========
+
+
+==================================
+X: [0.        0.0922345 1.        0.222222  0.3333335 0.4444445 0.222222
+ 1.        0.3333335 0.        0.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [7e-09, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [7e-09, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0922345  1.         0.222222   0.3333335  0.44444471
+ 0.222222   0.38888881 0.3333335  0.38888922 0.        ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 31 (94/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 86 (95/100) starts =========
+
+
+==================================
+X: [0.        0.093528  0.4444445 1.        1.        1.        1.
+ 0.111111  1.        1.        1.       ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e-01, 1e+00]
+
+Loaded MIP start with objective 0.611111
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] 0
+p[7] 0
+p[8] 0
+p[9] 0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.093528   0.4444445  0.61111085 0.38888881 1.
+ 0.4999998  0.111111   1.         0.4999998  0.38888881]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 86 (95/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 63 (96/100) starts =========
+
+
+==================================
+X: [0.        0.083655  0.222222  0.        0.222222  0.        0.222222
+ 0.3333335 0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 2.876839e-02, 38 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.03059    0    7    0.38889    0.03059  92.1%     -    0s
+H    0     0                       0.0555555    0.03059  44.9%     -    0s
+     0     0     cutoff    0         0.05556    0.05556  0.00%     -    0s
+
+Explored 1 nodes (40 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 2: 0.0555555 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.555551500000e-02, best bound 5.555551500000e-02, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.0555555
+Obj: 0.0555555
+
+-------------------------------------
+
+result for this point: [0.         0.083655   0.222222   0.         0.222222   0.
+ 0.222222   0.38888922 0.         0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 63 (96/100) finished, distortion:0.055555715000000006 =========
+
+
+
+
+======== Point 91 (97/100) starts =========
+
+
+==================================
+X: [0.        0.0941905 0.3333335 0.        0.        0.        0.111111
+ 0.        0.111111  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 26 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (26 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0941905  0.3333335  0.         0.         0.
+ 0.111111   0.38888922 0.111111   0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 91 (97/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 92 (98/100) starts =========
+
+
+==================================
+X: [0.        0.0942265 0.222222  0.        0.        0.        0.111111
+ 0.        0.222222  0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+Loaded MIP start with objective 0.388889
+
+Presolve removed 17 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 48 rows, 30 columns, 147 nonzeros
+Variable types: 23 continuous, 7 integer (7 binary)
+
+Root relaxation: objective 8.575206e-02, 27 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         0.38889    0.38889  0.00%     -    0s
+
+Explored 0 nodes (27 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 0
+p[5] 1
+p[6] 1
+p[7] 1
+p[8] 1
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 1
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 1
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 1
+l[28] 0
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0942265  0.222222   0.         0.         0.
+ 0.111111   0.38888922 0.222222   0.         0.        ]
+success from solver: True
+mislabel constraint: 0.3480994179
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 92 (98/100) finished, distortion:0.388889215 =========
+
+
+
+
+======== Point 119 (99/100) starts =========
+
+
+==================================
+X: [0.        0.0976515 0.4444445 1.        1.        1.        0.3333335
+ 1.        0.4444445 0.5555555 0.222222 ]
+label: [1]
+prediction: [1]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 34 rows and 17 columns
+Presolve time: 0.00s
+Presolved: 31 rows, 23 columns, 99 nonzeros
+Variable types: 17 continuous, 6 integer (6 binary)
+Found heuristic solution: objective 0.6111112
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.611111 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.111111850000e-01, best bound 6.111111850000e-01, gap 0.0000%
+p[0] 1
+p[1] 1
+p[2] 1
+p[3] 1
+p[4] 1
+p[5] 1
+p[6] -0
+p[7] 0
+p[8] 0
+p[9] -0
+l[0] 1
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 0
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 1
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 0
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 1
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 0
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 1
+l[26] 0
+l[27] 0
+l[28] 0
+b 0.611111
+Obj: 0.611111
+
+-------------------------------------
+
+result for this point: [0.         0.0976515  0.4444445  0.61111085 0.38888881 1.
+ 0.3333335  0.38888881 0.4444445  0.4999998  0.222222  ]
+success from solver: True
+mislabel constraint: -0.4680399897
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 119 (99/100) finished, distortion:0.611111185 =========
+
+
+
+
+======== Point 81 (100/100) starts =========
+
+
+==================================
+X: [0.        0.0919305 0.        0.        0.        0.        0.111111
+ 0.        0.        0.        0.       ]
+label: [0]
+prediction: [0]
+Optimize a model with 65 rows, 40 columns and 220 nonzeros
+Variable types: 30 continuous, 10 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [3e-02, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-07, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 2 rows and 1 columns
+Presolve time: 0.00s
+Presolved: 63 rows, 39 columns, 206 nonzeros
+Variable types: 29 continuous, 10 integer (10 binary)
+Found heuristic solution: objective 0.3888890
+
+Root relaxation: objective 7.203094e-02, 36 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.08575    0    6    0.38889    0.08575  77.9%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (38 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 24 available processors)
+
+Solution count 1: 0.388889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.888890150000e-01, best bound 3.888890150000e-01, gap 0.0000%
+p[0] 1
+p[1] -0
+p[2] -0
+p[3] 1
+p[4] -0
+p[5] 1
+p[6] -0
+p[7] -0
+p[8] -0
+p[9] 1
+l[0] 0
+l[1] 0
+l[2] 0
+l[3] 0
+l[4] 0
+l[5] 1
+l[6] 0
+l[7] 0
+l[8] 0
+l[9] 0
+l[10] 0
+l[11] 0
+l[12] 0
+l[13] 1
+l[14] 0
+l[15] 0
+l[16] 0
+l[17] 0
+l[18] 0
+l[19] 0
+l[20] 0
+l[21] 1
+l[22] 0
+l[23] 0
+l[24] 0
+l[25] 0
+l[26] 0
+l[27] 0
+l[28] 1
+b 0.388889
+Obj: 0.388889
+
+-------------------------------------
+
+result for this point: [0.         0.0919305  0.38888922 0.         0.38888922 0.38888922
+ 0.5000002  0.38888922 0.         0.38888922 0.        ]
+success from solver: True
+mislabel constraint: 1.111552685
+adv[0]: 0.0
+0th feature set back to 0. adv[0]: 0.0
+
+======== Point 81 (100/100) finished, distortion:0.388889215 =========
+
+
+attacked 97/100 points, average linf distortion: 0.39518928221649446, total time:0.7062346935272217
+breast_cancer is done
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=20gb,ncpus=16,walltime=72:00:00
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cpupercent=400,cput=00:00:08,mem=0kb,ncpus=16,vmem=0kb,walltime=00:00:02
+ 
+ 

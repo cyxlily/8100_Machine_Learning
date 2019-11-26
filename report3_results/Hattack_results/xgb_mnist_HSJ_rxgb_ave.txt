@@ -1,0 +1,3 @@
+average distance: 0.02848794315010309
+
+average used time: 375.9093682384491

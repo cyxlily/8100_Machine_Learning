@@ -15,6 +15,6 @@ python HSJ_attack.py fashion_mnist rxgb ../../data/fashion.test0 ../../report3_m
 #python HSJ_attack.py higgs rxgb ../../data/HIGGS_s.test0 ../../report3_models/rxgb/higgs_robust/0300.model 2 28
 #python HSJ_attack.py ijcnn rxgb ../../data/ijcnn1s0.t ../../report3_models/rxgb/ijcnn_robust_new/0060.model 2 22
 python HSJ_attack.py mnist rxgb ../../data/ori_mnist.test0 ../../report3_models/rxgb/ori_mnist_robust_new/0200.model 10 784
-python HSJ_attack.py sensorless rxgb ../../data/webspam_wc_normalized_unigram.svm0.test ../../models/rxgb/Sensorless_rxgb.model 11 48
-#python HSJ_attack.py webspam rxgb ../../data/Sensorless.scale.val0 ../../report3_models/rxgb/webspam_robust_new/0100.model 2 254
+python HSJ_attack.py sensorless rxgb ../../data/Sensorless.scale.val0 ../../models/rxgb/Sensorless_rxgb.model 11 48
+#python HSJ_attack.py webspam rxgb ../../data/webspam_wc_normalized_unigram.svm0.test ../../report3_models/rxgb/webspam_robust_new/0100.model 2 254
 #python HSJ_attack.py mnist2_6 rxgb ../../data/binary_mnist0.t ../../report3_models/rxgb/binary_mnist_robust/1000.model 2 784
