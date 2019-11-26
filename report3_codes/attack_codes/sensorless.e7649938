@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "HSJ_attack.py", line 45, in <module>
+    model.load_model(model_path)
+  File "/home/yuxinc/.conda/envs/robusttrees_py37/lib/python3.7/site-packages/xgboost/core.py", line 1366, in load_model
+    _check_call(_LIB.XGBoosterLoadModel(self.handle, c_str(fname)))
+  File "/home/yuxinc/.conda/envs/robusttrees_py37/lib/python3.7/site-packages/xgboost/core.py", line 176, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [19:03:04] /home/conda/feedstock_root/build_artifacts/xgboost_1566327313563/work/src/learner.cc:349: Check failed: fi->Read(&name_obj_[0], len) == len (9482 vs. 1953656680) : BoostLearner: wrong model format
+Stack trace:
+  [bt] (0) /home/yuxinc/.conda/envs/robusttrees_py37/lib/libxgboost.so(+0x6e5a4) [0x14a0189f75a4]
+  [bt] (1) /home/yuxinc/.conda/envs/robusttrees_py37/lib/libxgboost.so(+0x11542d) [0x14a018a9e42d]
+  [bt] (2) /home/yuxinc/.conda/envs/robusttrees_py37/lib/libxgboost.so(XGBoosterLoadModel+0x4b) [0x14a0189f94db]
+  [bt] (3) /home/yuxinc/.conda/envs/robusttrees_py37/lib/python3.7/lib-dynload/../../libffi.so.6(ffi_call_unix64+0x4c) [0x14a024214ec0]
+  [bt] (4) /home/yuxinc/.conda/envs/robusttrees_py37/lib/python3.7/lib-dynload/../../libffi.so.6(ffi_call+0x22d) [0x14a02421487d]
+  [bt] (5) /home/yuxinc/.conda/envs/robusttrees_py37/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so(_ctypes_callproc+0x2ce) [0x14a024429ede]
+  [bt] (6) /home/yuxinc/.conda/envs/robusttrees_py37/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so(+0x12914) [0x14a02442a914]
+  [bt] (7) python(_PyObject_FastCallKeywords+0x49b) [0x565173e838fb]
+  [bt] (8) python(_PyEval_EvalFrameDefault+0x52f8) [0x565173ee76e8]
+
+

@@ -1,0 +1,72 @@
+Robust Decision Trees Against Adversarial Examples
+CPSC-8100 Fall 2019 
+Cai, Ying & Yuxin Cui
+
+1. enviroment: Clemson Palmetto, 24+ cores, 100+ gb mem.
+               Module: Anaconda3/5.1.0
+               Python: 3.7.4
+               Packages needed: xgboost, pandas, numpy, scipy, sklearn, mlxtend, subprocess, time, pickle, xlrd
+               May need other packages, please install as required.
+
+2. Copy py file folder_create.py to the folder created for this project. Run the file to create home folder 'cai_cui' and all needed folders.
+
+3. cd cai_cui
+
+4. Install robust_xgboost package from Github using Unix command line:
+               git clone --recursive https://github.com/chenhongge/RobustTrees.git
+               cd RobustTrees
+               ./build.sh
+               make
+
+5. Copy all code files in submitted folder Code to /cai_cui/codes.
+               
+6. Download datasets:
+              From LIBSVM Data:Classification (Binary Class) we can download datasets: breast-cancer, cod-rna, diabetes, ijcnn1, and webspam.
+                  link  https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html.
+              Down load Sensorless dataset from UCI. https://archive.ics.uci.edu/ml/datasets/dataset+for+sensorless+drive+diagnosis.
+              In folder '/cai_cui/data', please create a folder 'MNIST_orig' for dataset MNIST, and download 4 data files from http://yann.lecun.com/exdb/mnist/.
+              In folder '/cai_cui/data', please create a folder 'Fashion_MNIST_orig' for dataset MNIST, and download 4 data files from Github. https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion.
+              The MNIST and Fashion_MNIST data files needs unzip.
+              We include the dataset diabetes as the sample dataset in submitted folder.
+
+7. Normalize data and split them into train set and test set:
+              cd /cai_cui/codes
+              python norm_split_driver.py
+              python MNIST_norm.py
+              python webspam_norm.py
+              python ijcnn_norm_split.py
+              After they are all completed, we will find all training and test sets are ready in folder /data. The format is pickle.
+
+8. Natual xgboost models:
+              Stay in folder /codes
+              python xgb_model_driver.py
+              After it completes, we will find all xgb models are ready in folder models/xgb. Models are saved in .model format.
+              To check the test set accuracy, run
+              python xgb_accu.py
+              The accuracies are stored in folder /test_accu/xgb_test_accu.txt. Also, the time used to build models are stored in it too.
+              This program also selects and stores samples for attack. The sample set is stored in folder /chosen_sample.
+
+9. Robust xgboost models:
+              Stay in folder /codes
+              python rxgb_prep_driver.py
+              After it completes, we will find all robust xgb models are ready in folder models/rxgb/dataset_name. Models are saved in .model format.
+              This program also outputs a file rxgb_used_time.txt, which records the time used to tune models. It is folder /test_accu.
+              To check the test set accuracy, run
+              python rxgb_test_sampling.py
+              The accuracies are stored in folder /test_accu/rxgb_test_accu.txt. The chosen sample sets are in folder /chosen_sample
+
+10. Cheng's attack:
+              Attack natual xgboost models:
+                 python cheng_attack_driver.py
+                 For each dataset, we have a file datasetname_cheng_attack_xgb.txt, which has the distance, original points and points after perturbation. 
+                 We also output the average distance to file datasetname_cheng_xgb_ave.txt
+              Attack robust xgboost models:
+                 python cheng_attack_rxgb_driver.py
+                 For each dataset, we have a file datasetname_cheng_attack_rxgb.txt, which has the distance, original points and points after perturbation. 
+                 We also output the average distance to file datasetname_cheng_rxgb_ave.txt
+
+11. Kantchelian's attack:
+              For example, attack MNIST2_6 xgb model:
+              nohup python xgbKantchelianAttack.py -d=../chosen_sample/xgb/MNIST2_6_xgb_samples.pkl -m=../models/xgb/MNIST2_6_xgb.model -c=2 >../Kattack_result/xgb/MNIST2_6_xgb_log.txt 2>&1 &   
+              -d means sample data path, -m means model path, -c means number of class, we write result to path ../Kattack_result/xgb/MNIST2_6_xgb_log.txt
+             

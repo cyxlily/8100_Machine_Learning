@@ -1,0 +1,269 @@
+inputs: ../data/cod-rna_s.t
+model: ../paper_models/rxgb/cod-rna_robust/0080.json
+start_idx: 0
+num_attack: 200
+eps_init: 0.3
+max_clique: 2
+max_search: 10
+max_level: 1
+num_classes: 2
+dp: 0
+one_attr: 0
+only_attr: -100
+
+feature starts at 1
+
+data shape:271617 * 8
+
+
+0th tree
+
+
+1th tree
+
+
+2th tree
+
+
+3th tree
+
+
+4th tree
+
+
+5th tree
+
+
+6th tree
+
+
+7th tree
+
+
+8th tree
+
+
+9th tree
+
+
+10th tree
+
+
+11th tree
+
+
+12th tree
+
+
+13th tree
+
+
+14th tree
+
+
+15th tree
+
+
+16th tree
+
+
+17th tree
+
+
+18th tree
+
+
+19th tree
+
+
+20th tree
+
+
+21th tree
+
+
+22th tree
+
+
+23th tree
+
+
+24th tree
+
+
+25th tree
+
+
+26th tree
+
+
+27th tree
+
+
+28th tree
+
+
+29th tree
+
+
+30th tree
+
+
+31th tree
+
+
+32th tree
+
+
+33th tree
+
+
+34th tree
+
+
+35th tree
+
+
+36th tree
+
+
+37th tree
+
+
+38th tree
+
+
+39th tree
+
+
+40th tree
+
+
+41th tree
+
+
+42th tree
+
+
+43th tree
+
+
+44th tree
+
+
+45th tree
+
+
+46th tree
+
+
+47th tree
+
+
+48th tree
+
+
+49th tree
+
+
+50th tree
+
+
+51th tree
+
+
+52th tree
+
+
+53th tree
+
+
+54th tree
+
+
+55th tree
+
+
+56th tree
+
+
+57th tree
+
+
+58th tree
+
+
+59th tree
+
+
+60th tree
+
+
+61th tree
+
+
+62th tree
+
+
+63th tree
+
+
+64th tree
+
+
+65th tree
+
+
+66th tree
+
+
+67th tree
+
+
+68th tree
+
+
+69th tree
+
+
+70th tree
+
+
+71th tree
+
+
+72th tree
+
+
+73th tree
+
+
+74th tree
+
+
+75th tree
+
+
+76th tree
+
+
+77th tree
+
+
+78th tree
+
+
+79th tree
+number of points: 200
+
+
+
+
+=================start index:0, num of points:200, current index:0, current label: 0 =================
+
+
+************** eps=0.3 starts ******************
+
+^^^^^^^^^^^^^^^^ binary model  ^^^^^^^^^^^^^^^
+all tree leaves size: 80
+point dimension is 8, box has attribute -1

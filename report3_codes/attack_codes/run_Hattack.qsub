@@ -1,0 +1,11 @@
+#/bin/bash
+
+#PBS -N covtype
+#PBS -l select=1:ncpus=16:mem=60gb:ngpus=1:gpu_model=k40
+#PBS -l walltime=72:00:00
+
+module purge
+module load anaconda3/5.0.1 gurobi/7.0.2 
+source activate robusttrees_py37
+cd ~/8100/8100-Intro-to-AI-project/report3_codes/attack_codes
+python HSJ_attack.py covtype rxgb ../../data/covtype.scale01.test0 ../../report3_models/rxgb/covtype_robust/0080.model 7 54

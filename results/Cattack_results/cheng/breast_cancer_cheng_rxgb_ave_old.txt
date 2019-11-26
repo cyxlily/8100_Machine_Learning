@@ -1,0 +1,1 @@
+average distance: 0.09967462812898704
