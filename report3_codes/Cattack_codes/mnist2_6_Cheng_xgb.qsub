@@ -1,0 +1,11 @@
+#/bin/bash
+
+#PBS -N mnist2_6_Cheng_xgb
+#PBS -l select=1:ncpus=16:mem=20gb:ngpus=1:gpu_model=p100
+#PBS -l walltime=72:00:00
+
+module purge
+module load anaconda3/5.0.1 gurobi/7.0.2 
+source activate robusttrees_py37
+cd ~/8100/8100-Intro-to-AI-project/report3_codes/Cattack_codes
+python cheng_attack_driver.py mnist2_6 ../../data/binary_mnist0.t ../../report3_models/xgb/binary_mnist_unrobust/1000.model 2 784

@@ -9,9 +9,10 @@ import pandas as pd
 import xgboost as xgb
 import os
 curr = os.getcwd()
-find = curr.find('cai_cui')
-home = curr[:find+7]
-os.chdir('{}/codes'.format(home))
+#find = curr.find('cai_cui')
+#home = curr[:find+7]
+#os.chdir('{}/codes'.format(home))
+home = os.path.join(curr,"../..")
 import cheng_attack_rxgb
 from sklearn.datasets import load_svmlight_file
 from scipy import sparse
@@ -134,7 +135,7 @@ if __name__ == '__main__':
     pert['used_time'] = used_time
     pert['pert point'] = points
     pert['ori point'] = ori_points
-    os.chdir('{}/attack/cheng'.format(home))
+    os.chdir('{}/report3_results/Cattack_results'.format(home))
     pert.to_csv('{}_cheng_attack_rxgb.txt'.format(d_name))
     with open('{}_cheng_rxgb_ave.txt'.format(d_name), 'w') as f:
         f.write('average distance: ' + str(total_dis/len(test_label)))
