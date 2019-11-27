@@ -1,0 +1,19 @@
+sample 0 is done
+sample 1 is done
+mnist is done
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=20gb,ncpus=16,walltime=72:00:00
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cpupercent=1606,cput=02:24:23,mem=258412kb,ncpus=16,vmem=1285344kb,walltime=00:09:07
+ 
+ 

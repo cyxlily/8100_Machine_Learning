@@ -63,10 +63,10 @@ if __name__ == '__main__':
     test_label = df['label'].tolist()
     test_data = np.array(df.drop(columns=['label']))
     
-    if n<200:
+    if n<2:
         n_selected = n
     else:
-        n_selected = 200
+        n_selected = 2
         
         
     ori_points = []

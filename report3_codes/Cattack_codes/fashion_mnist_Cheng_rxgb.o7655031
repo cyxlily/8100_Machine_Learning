@@ -1,0 +1,19 @@
+sample 0 is done
+sample 1 is done
+fashion_mnist is done
+ 
+ 
++------------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES REQUESTED | 
++------------------------------------------+ 
+ 
+mem=20gb,ncpus=16,walltime=72:00:00
+ 
+ 
++-------------------------------------+ 
+| PALMETTO CLUSTER PBS RESOURCES USED | 
++-------------------------------------+ 
+ 
+cpupercent=1605,cput=02:54:11,mem=265908kb,ncpus=16,vmem=1290724kb,walltime=00:11:13
+ 
+ 
